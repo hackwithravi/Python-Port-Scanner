@@ -31,7 +31,7 @@ Installation
 
     cd Python-Port-Scanner
 
-    chmod +x port.py
+    chmod +x Port_scanner.py
 
 
 
@@ -41,7 +41,7 @@ Run the script with Python:
 
 
 
-    python3 port.py example.com <arguments>
+    python3 Port_scanner.py example.com <arguments>
 
 Version 1.0
 
