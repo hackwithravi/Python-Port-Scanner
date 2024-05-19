@@ -1,4 +1,3 @@
-Certainly! Below is a README template for your GitHub repository based on the provided code:
 Python Port Scanner
 Description
 
@@ -23,21 +22,17 @@ Installation
 
     Clone the repository:
 
-    bash
-
-git clone https://github.com/your_username/python-port-scanner.git
+        git clone https://github.com/your_username/python-port-scanner.git
 
 Install the required Python dependencies:
 
-bash
-
-    pip install -r requirements.txt
+        pip install -r requirements.txt
 
 Usage
 
 bash
 
-usage: port_scanner.py [-h] [-s] [-e] [-t] [-V] [--tcp] [--udp] [--syn] [--ping] [--xmas] [--aggressive] [-v]
+        usage: port_scanner.py [-h] [-s] [-e] [-t] [-V] [--tcp] [--udp] [--syn] [--ping] [--xmas] [--aggressive] [-v]
                        target
 
 Advanced Port Scanner Based on Python
