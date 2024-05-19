@@ -27,9 +27,9 @@ A simple Python script to scan ports on a host or a range of hosts using threadi
 Installation
 
   
-    git clone https://github.com/your_username/port-scanner.git
+    git clone https://github.com/hackwithravi/Python-Port-Scanner.git
 
-    cd port-scanner
+    cd Python-Port-Scanner
 
     chmod +x port.py
 
