@@ -41,7 +41,7 @@ Run the script with Python:
 
 
 
-    python port.py <arguments>
+    python3 port.py example.com <arguments>
 
 Version
 
@@ -51,4 +51,4 @@ License
 This project is licensed under the MIT License. See the LICENSE file for details.
 Credits
 
-    Created by Your Name
+    https://github.com/hackwithravi
