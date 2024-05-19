@@ -31,10 +31,9 @@ Usage
 
 bash
 
-        usage: port_scanner.py [-h] [-s] [-e] [-t] [-V] [--tcp] [--udp] [--syn] [--ping] [--xmas] [--aggressive] [-v]
+    usage: port_scanner.py [-h] [-s] [-e] [-t] [-V] [--tcp] [--udp] [--syn] [--ping] [--xmas] [--aggressive] [-v]
                        target
 
-Advanced Port Scanner Based on Python
 
 positional arguments:
   target             IP or hostname to scan
