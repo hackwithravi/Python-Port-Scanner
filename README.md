@@ -1,2 +1,2 @@
 # Simple-Port-Scanner-
-Advanced Port Scanner
+Python based  Port Scanner
