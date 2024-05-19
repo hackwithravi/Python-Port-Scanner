@@ -37,7 +37,7 @@ Installation
 
 
 
-Run the script with Python:
+Run the script with Python3:
 
 
 
