@@ -43,9 +43,8 @@ Run the script with Python:
 
     python3 port.py example.com <arguments>
 
-Version
+Version 1.0
 
-1.0
 License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
