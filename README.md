@@ -15,18 +15,17 @@ Features
 
 Requirements
 
-    Python 3.x
+    Python 3
     Nmap (for service detection)
 
 Installation
 
-    Clone the repository:
 
-        git clone https://github.com/your_username/python-port-scanner.git
+    git clone https://github.com/your_username/python-port-scanner.git
 
 Install the required Python dependencies:
 
-        pip install -r requirements.txt
+    pip install -r requirements.txt
 
 Usage
 
