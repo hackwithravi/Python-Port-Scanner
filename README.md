@@ -60,19 +60,16 @@ Examples
 
     Perform a TCP scan on ports 1-1000 with verbose output:
 
-    bash
-
-python port_scanner.py example.com --tcp --start 1 --end 1000 --verbose
+    python port_scanner.py example.com --tcp --start 1 --end 1000 --verbose
 
 Perform an Aggressive Scan with default port range:
-
-bash
 
     python port_scanner.py example.com --aggressive
 
 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
 Author
 
-Your Name
+Ravi
