@@ -9,23 +9,13 @@ Features
 Usage
 
     Clone the Repository:
+    git clone https://github.com/your_username/advanced-port-scanner.git
+    cd advanced-port-scanner
 
-    bash
-
-git clone https://github.com/your_username/advanced-port-scanner.git
-cd advanced-port-scanner
-
-Install Dependencies:
-
-bash
-
-pip install -r requirements.txt
-
-Run the Script:
-
-bash
-
-python port_scanner.py target_ip_or_hostname
+    Install Dependencies:
+    pip install -r requirements.txt
+    Run the Script:
+    python port_scanner.py target_ip_or_hostname
 
 Replace port_scanner.py with the name of the Python script and target_ip_or_hostname with the IP address or hostname you want to scan.
 
