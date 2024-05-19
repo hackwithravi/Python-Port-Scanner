@@ -21,7 +21,7 @@ Requirements
 Installation
 
 
-    git clone https://github.com/your_username/python-port-scanner.git
+    git clone https://github.com/hackwithravi/Python-Port-Scanner.git
 
 Install the required Python dependencies:
 
