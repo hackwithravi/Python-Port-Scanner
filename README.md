@@ -48,6 +48,7 @@ Version 1.0
 License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
+
 Credits
 
-    https://github.com/hackwithravi
+https://github.com/hackwithravi
