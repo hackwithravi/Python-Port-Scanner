@@ -1,42 +1,84 @@
-# Simple-Port-Scanner-
-Python based  Port Scanner
+Certainly! Below is a README template for your GitHub repository based on the provided code:
+Python Port Scanner
+Description
+
+Python Port Scanner is an advanced network scanning tool implemented in Python. It provides various scanning techniques such as TCP, UDP, SYN, Ping, Xmas, and Aggressive scans. The script is multi-threaded for faster scanning and utilizes the socket and subprocess modules for network communication and service detection.
 Features
 
-    Scan a range of ports on a specified IP address or hostname.
-    Multi-threaded scanning for faster results.
-    Detection of open ports and services running on those ports.
+    TCP connect scan
+    UDP scan
+    TCP SYN scan (-sS)
+    Ping Scan (-sn)
+    Xmas Scan
+    Aggressive Scan
+    Multi-threaded scanning
+    Verbose output option
 
-Usage
+Requirements
 
-    Clone the Repository:
-    
-    git clone https://github.com/hackwithravi/Simple-Port-Scanner.git
-    cd Simple-Port-Scanner
+    Python 3.x
+    Nmap (for service detection)
 
-    Install Dependencies:
-    
-    pip install -r requirements.txt
-    Run the Script:
-    python Port_Scanner.py target_ip_or_hostname
+Installation
 
-Replace port_scanner.py with the name of the Python script and target_ip_or_hostname with the IP address or hostname you want to scan.
+    Clone the repository:
 
-Options:
+    bash
 
-    -s, --start: Start port number (default: 1).
-    -e, --end: End port number (default: 65535).
-    -t, --threads: Number of threads to use (default: 1000).
-    -V, --verbose: Enable verbose output.
+git clone https://github.com/your_username/python-port-scanner.git
 
-Example:
+Install the required Python dependencies:
 
 bash
 
-    python port_scanner.py -s 20 -e 40000 -t 500 -V 192.168.1.2
+    pip install -r requirements.txt
 
-    This command scans ports from 20 to 40000 on the IP address 192.168.1.2 using 500 threads and verbose output.
+Usage
 
-Dependencies
+bash
 
-    argparse: Used for parsing command-line arguments.
-    nmap: Used for service detection on open ports.
+usage: port_scanner.py [-h] [-s] [-e] [-t] [-V] [--tcp] [--udp] [--syn] [--ping] [--xmas] [--aggressive] [-v]
+                       target
+
+Advanced Port Scanner Based on Python
+
+positional arguments:
+  target             IP or hostname to scan
+
+optional arguments:
+  -h, --help         show this help message and exit
+  -s , --start       start port number (default: 1)
+  -e , --end         end port number (default: 65535)
+  -t , --threads     threads use (default: 1000)
+  -V, --verbose      verbose output
+  --tcp              perform TCP scan (default)
+  --udp              perform UDP scan
+  --syn              perform TCP SYN scan (-sS)
+  --ping             perform Ping Scan (-sn)
+  --xmas             perform Xmas Scan
+  --aggressive       perform Aggressive Scan
+  -v, --version      display version
+
+Example:
+python port_scanner.py example.com --tcp --verbose
+
+Examples
+
+    Perform a TCP scan on ports 1-1000 with verbose output:
+
+    bash
+
+python port_scanner.py example.com --tcp --start 1 --end 1000 --verbose
+
+Perform an Aggressive Scan with default port range:
+
+bash
+
+    python port_scanner.py example.com --aggressive
+
+License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+Author
+
+Your Name
