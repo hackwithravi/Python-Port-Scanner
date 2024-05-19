@@ -1,73 +1,54 @@
-Python Port Scanner
-Description
+# Port Scanner
 
-Python Port Scanner is an advanced network scanning tool implemented in Python. It provides various scanning techniques such as TCP, UDP, SYN, Ping, Xmas, and Aggressive scans. The script is multi-threaded for faster scanning and utilizes the socket and subprocess modules for network communication and service detection.
-Features
+## Description
+A simple Python script to scan ports on a host or a range of hosts using threading. The script allows scanning specific ports or a range of ports, and it supports service detection for known ports.
 
-    TCP connect scan
-    UDP scan
-    TCP SYN scan (-sS)
-    Ping Scan (-sn)
-    Xmas Scan
-    Aggressive Scan
-    Multi-threaded scanning
-    Verbose output option
+## Features
+- Scan ports on a single host or a range of hosts using CIDR notation
+- Specify specific ports or port ranges to scan
+- Enable service detection for known ports
+- Multi-threaded scanning for faster results
 
-Requirements
+## Requirements
+- Python 3
 
-    Python 3
-    Nmap (for service detection)
+## Usage
+### Arguments
+- `host`: The host to scan (IP address or CIDR notation)
+- `-p PORT, --port PORT`: Port range to scan (e.g., 'start_port-end_port' or '-'). Default: Top 1000 ports.
+- `-v, --verbose`: Enable verbose output
+- `-t THREADS, --threads THREADS`: Number of threads to use for scanning (default: 100)
+- `-sV, --service-detection`: Enable service detection
+- `-sn, --cidr-scan`: Enable CIDR scanning (specify a range of IP addresses)
+
+## Examples
+- Scan top 1000 ports on a single host:
 
 Installation
 
+  
+    git clone https://github.com/your_username/port-scanner.git
 
-    git clone https://github.com/hackwithravi/Python-Port-Scanner.git
+    cd port-scanner
 
-Install the required Python dependencies:
-
-    pip install -r requirements.txt
-
-Usage
-
-bash
-
-    usage: port_scanner.py [-h] [-s] [-e] [-t] [-V] [--tcp] [--udp] [--syn] [--ping] [--xmas] [--aggressive] [-v]
-                       target
+    chmod +x port.py
 
 
-positional arguments:
-  target             IP or hostname to scan
 
-optional arguments:
-  -h, --help         show this help message and exit
-  -s , --start       start port number (default: 1)
-  -e , --end         end port number (default: 65535)
-  -t , --threads     threads use (default: 1000)
-  -V, --verbose      verbose output
-  --tcp              perform TCP scan (default)
-  --udp              perform UDP scan
-  --syn              perform TCP SYN scan (-sS)
-  --ping             perform Ping Scan (-sn)
-  --xmas             perform Xmas Scan
-  --aggressive       perform Aggressive Scan
-  -v, --version      display version
 
-Example:
-python port_scanner.py example.com --tcp --verbose
 
-Examples
+Run the script with Python:
 
-    Perform a TCP scan on ports 1-1000 with verbose output:
 
-    python port_scanner.py example.com --tcp --start 1 --end 1000 --verbose
 
-Perform an Aggressive Scan with default port range:
+    python port.py <arguments>
 
-    python port_scanner.py example.com --aggressive
+Version
 
+1.0
 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License. See the LICENSE file for details.
+Credits
 
-Author
-https://github.com/hackwithravi
+    Created by Your Name
