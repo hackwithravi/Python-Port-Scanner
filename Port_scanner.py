@@ -148,7 +148,7 @@ def prepare_threads(scan_func, threads:int):
     """
     threads_list = []
     for _ in range(threads + 1):
-        threads_list.append(Thread(target=scan_func, args=(arguments.target, ports)))
+        threads_list.append(Thread(target=scan_func, args=("example.com", ports)))  # <-- Here
     for thread in threads_list:
         thread.start()
     for thread in threads_list:
@@ -165,13 +165,13 @@ if __name__ == "__main__":
     elif arguments.syn_scan:
         scan_func = syn_scan
     elif arguments.ping_scan:
-        ping_scan(arguments.target)
+        ping_scan("example.com")  # <-- Here
         exit()
     elif arguments.xmas_scan:
-        xmas_scan(arguments.target, ports)
+        xmas_scan("example.com", ports)  # <-- Here
         exit()
     elif arguments.aggressive_scan:
-        aggressive_scan(arguments.target)
+        aggressive_scan("example.com")  # <-- Here
         exit()
     else:
         scan_func = tcp_scan
